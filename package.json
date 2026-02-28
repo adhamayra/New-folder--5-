@@ -1,0 +1,16 @@
+{
+  "name": "learn-everything",
+  "version": "1.0.0",
+  "description": "Learn Everything - AI-powered learning platform with MongoDB Atlas",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "setup-db": "node scripts/setup-collections.js",
+    "setup-db:shell": "mongosh \"$MONGODB_URI\" < scripts/mongodb-atlas-shell.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "mongoose": "^8.0.0"
+  }
+}
